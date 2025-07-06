@@ -1,3 +1,3 @@
 git add .
-git commit -m "配置自动部署"
+git commit -m "Update files $(date +'%Y-%m-%d %H:%M:%S')"
 git push

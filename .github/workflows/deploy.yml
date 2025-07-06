@@ -19,13 +19,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./blog
 
       - name: Generate static files
         run: npx hexo generate
+        working-directory: ./blog
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+          publish_dir: ./blog/public

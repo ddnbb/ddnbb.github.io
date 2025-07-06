@@ -1,0 +1,12 @@
+node_modules/
+public/
+db.json
+.deploy*/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.idea/
+.vscode/
+*.local
